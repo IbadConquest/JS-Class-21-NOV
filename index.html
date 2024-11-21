@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 21 NOV</title>
+</head>
+<body>
+        <input type="text" name="" id="val1">
+        <input type="text" name="" id="val2">
+        <button onclick="abc()">Click there</button>
+        
+        <h1 id="ans"></h1>
+        <button onclick="xyz()">Date</button>
+        <h2 id="day"></h2>
+    <script>
+
+        function abc(){
+            var x = document.getElementById('val1').value
+            var y = document.getElementById('val2').value
+
+            if(x < y){
+                
+                 var z = "Greater than"
+            } 
+
+            else if(x==y) {
+                var z = "Equal"
+            }
+
+            else{
+                var z = "Less than"
+            }
+
+            document.getElementById('ans').innerHTML = z
+        }
+
+   function xyz(){
+
+        switch (new Date().getDay() ){
+            case 0:
+                var day = "sunday"
+                
+                break
+            case 1:
+                var day = "Monday"
+                break 
+            case 2:
+                var day = "Tuesday"
+                break
+            case 3:
+                var day = "Wednesday"
+                break
+            case 4:
+                var day = "Thrusday"
+                break
+            case 5:
+                var day = "Friday"
+                break
+            case 6:
+                var day = "Saturday"
+                break  
+        }
+        document.getElementById('day').innerHTML = day
+    }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
